@@ -1,0 +1,364 @@
+html, body, h1, h2, h3, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+body {
+  background: #e3e3e3;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 13px;
+  color: black;
+  line-height: 1;
+}
+
+
+#root {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#root .container {
+    width: 376px;
+    height: 666px;
+    z-index: 100;
+    background: #fbfafa;
+    border-radius: 40px;
+    box-shadow: 0 0 20px -6px rgb(48 48 48 / 90%);
+    position: relative;
+    overflow: hidden
+}
+
+#root .container-view {
+  padding: 20px;
+}
+
+header {
+  height: 40px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); */
+  /* background:white; */
+}
+
+header svg {
+  display: block;
+  /* width: 97%; */
+  height: 70%;
+  position: relative;
+  left: -11.4vw;
+  top: 1.2vw;
+  filter: contrast(1.5);
+  /* filter: grayscale(5) */
+}
+
+.callBodyLeft, .callBodyMiddle {
+  display: inline-block;
+  float: left;
+  height: 50px;
+}
+
+.callContainer {
+  margin-top: 10px;
+  height: 55px;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  box-shadow:0 0 14px -7px rgb(159 159 159 / 90%);
+  padding-left: 15px;
+  width: 85%;
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  background: white;
+  display: block;
+    position: relative;
+  left: 0;
+  transition: 0.6s;
+}
+
+.feedInn {
+  margin-top: 1.2vw;
+}
+
+.callBodyTop {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: bold;
+  color:black
+}
+
+.callBodyLeft {
+  width: 70px;
+}
+
+.callBodyMiddle {
+  width: calc(90% - 70px - 25px);
+  position: relative;
+  top: -2px;
+}
+
+.callBodyRightInn {
+  padding: 5px 0; 
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+.settingsIconInn {
+  transform: rotate(90deg);
+  height: 25px;
+  width: 40px;
+  float: left;
+  letter-spacing:4px;
+  position: relative;
+  top: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  color:black;
+  cursor: pointer;
+}
+
+.settingsIcon {
+  width: 40px;
+  display: inline-block;
+  float: left;
+  height: 50px;
+}
+
+.callBodyBottom {
+  font-size: 11px;
+  color:black
+}
+
+.callBodyLeftInn {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background:#6ac733;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  color:white
+}
+
+.callBodyTop.missed {
+  color: #f10b2b;
+}
+
+img.calltypeIcon {
+  display: inline-block;
+  height: 15px;
+  position: relative;
+  top: 3px;
+  margin-top: -3px;
+  margin-right: 8px;
+}
+
+.menu {
+  width: 100%;
+  background: linear-gradient(174deg, #181818b0 3%, #1a1818fc 39%);
+  position: absolute;
+  top: 78px;
+  height: 100%;
+  z-index: 1;
+  transition: 0.5s;
+  left: 100%;
+  transition-timing-function: cubic-bezier(0.64, -0.01, 0.91, 0.3)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  background: #fbfbfb;
+  box-shadow: 0 0 9px -6px rgb(48 48 48 / 90%); 
+  height: 85px;
+}
+
+.feed {
+  height: 475px;
+}
+
+.feedInn {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  width: calc(100% - 5px);
+}
+
+.footerInn {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  width: 80%;
+  margin: 0 auto
+}
+
+.footerIconHolder.dialer {
+  background: #009312;
+  width: max-content;
+  padding: 10px;
+  border-radius: 100px;
+  width: 55px;
+  height: 55px;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+  box-shadow: 0 0 7px 0px rgb(49 49 49);
+}
+
+img.footerIconImg {
+  width: 100%;
+}
+
+.footerIconImgHold {
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.footerTextInn {
+  text-align: center;
+  margin: 10px;
+  transition: 0.3s;
+  font-weight:bold
+}
+
+.footerIconHolder.calls {
+  position: relative;
+  top: 20px;
+}
+
+.footerIconHolder {
+  cursor: pointer;
+}
+
+
+button.menuItem {
+  color: white;
+  border: none;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 100%;
+  box-shadow: 0 0 4px 1px rgb(24 24 24 / 90%);
+  cursor: pointer;
+}
+
+button.menuItem.archive {
+  background: #fffdfd;
+  border: none;
+  color: #0a0a0a;
+  /* font-weight: unset; */
+}
+
+button.menuItem.close {
+  background: #c72f2f;
+}
+
+.menuItemHld {
+  margin: 10px auto;
+  width: 80%;
+}
+
+.menuInn {
+  position: absolute;
+  width: 100%;
+  bottom: 187px;
+}
+
+.callCount {
+  background: red;
+  color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  display: none;
+  place-content: center;
+  position: relative;
+  top: -18px;
+  left: 90px;
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ....................................................SCROLLBARR................................... */
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 13px;
+      transition:0.3s;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #d5d5d5;
+      transition:0.3s;
+      border-radius: 100px
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      transition:0.3s;
+      background: #949494;  
+      cursor: pointer;
+    }
+  

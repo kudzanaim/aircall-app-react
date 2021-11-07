@@ -3,6 +3,8 @@ View the App here: https://callapp-be4fb.web.app/
 
 GitHub Repo: https://github.com/kudzanaim/aircall-app-react/
 
+Hosted on Firebase Free Hosting
+
 # The app has the following funcitonality:
 
 Activity Feed - simple list of calls
